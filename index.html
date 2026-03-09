@@ -594,7 +594,7 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
       <div class="section-number text-gray-400 mb-4">14 / LE DASHBOARD</div>
       <h2 class="font-grotesk text-4xl sm:text-5xl font-bold mb-6">Ce que le courtier voit en premier.</h2>
       <p class="text-lg text-gray-400 font-space mb-10">
-        Quand il se connecté, il arrive sur son tableau de bord. 4 chiffres clés en haut, des graphiques, et les derniers avis.
+        Quand il se connecte, il arrive sur son tableau de bord. 4 chiffres clés en haut, des graphiques, et les derniers avis.
       </p>
     </div>
     <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
@@ -636,7 +636,7 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
       <div class="section-number mb-4">15 / LES CAMPAGNES</div>
       <h2 class="font-grotesk text-4xl sm:text-5xl font-bold mb-6">Comment le courtier demande des avis.</h2>
       <p class="text-lg text-gray-500 font-space mb-8">
-        Le courtier crée une campagne, ajoute ses clients (un par un ou par CSV), personnalisé le message, et envoie. Chaque client reçoit un email avec un lien unique.
+        Le courtier crée une campagne, ajoute ses clients (un par un ou par CSV), personnalise le message, et envoie. Chaque client reçoit un email avec un lien unique.
       </p>
     </div>
     <div class="anim neo-card p-6 sm:p-8">
@@ -658,8 +658,8 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
         <div class="flex items-start gap-4">
           <div class="w-8 h-8 bg-neo-black text-white flex-shrink-0 flex items-center justify-center font-mono font-bold text-sm neo-border-2">3</div>
           <div>
-            <h4 class="font-bold mb-1">Il personnalisé le message</h4>
-            <p class="text-gray-500 text-sm font-space">Variables <code class="bg-neo-gray px-1">{prénom}</code> et <code class="bg-neo-gray px-1">{cabinet}</code>. Preview avant envoi.</p>
+            <h4 class="font-bold mb-1">Il personnalise le message</h4>
+            <p class="text-gray-500 text-sm font-space">Variables <code class="bg-neo-gray px-1">{prenom}</code> et <code class="bg-neo-gray px-1">{cabinet}</code>. Preview avant envoi.</p>
           </div>
         </div>
         <div class="flex items-start gap-4">
@@ -683,7 +683,7 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
       <div class="section-number mb-4">16 / LA PAGE TAMPON</div>
       <h2 class="font-grotesk text-4xl sm:text-5xl font-bold mb-6">Là où le client donne son avis.</h2>
       <p class="text-lg text-gray-500 font-space mb-8">
-        Le client cliqué sur le lien dans l'email. Il arrive sur une page simple, aux couleurs du courtier. Pas de compte à créer, rien à télécharger.
+        Le client clique sur le lien dans l'email. Il arrive sur une page simple, aux couleurs du courtier. Pas de compte à créer, rien à télécharger.
       </p>
     </div>
     <div class="anim neo-card p-6 sm:p-8">
@@ -722,7 +722,7 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
       <div class="section-number mb-4">17 / LE ROUTAGE INTELLIGENT</div>
       <h2 class="font-grotesk text-4xl sm:text-5xl font-bold mb-6">Content &rarr; Google. Pas content &rarr; interne.</h2>
       <p class="text-lg text-gray-500 font-space mb-8">
-        C'est la logique centrale. On ne redirigé <strong>jamais</strong> un client mécontent vers Google. Les bons avis vont sur Google, les mauvais restent en interne pour que le courtier puisse réagir.
+        C'est la logique centrale. On ne redirige <strong>jamais</strong> un client mécontent vers Google. Les bons avis vont sur Google, les mauvais restent en interne pour que le courtier puisse réagir.
       </p>
     </div>
     <div class="grid sm:grid-cols-2 gap-6">
@@ -749,7 +749,7 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
       <div class="section-number mb-4">18 / LES RELANCES AUTOMATIQUES</div>
       <h2 class="font-grotesk text-4xl sm:text-5xl font-bold mb-6">J+0, J+2, J+5. Puis on arrête.</h2>
       <p class="text-lg text-gray-500 font-space mb-8">
-        Un cron tourne tous les jours à 9h. Il regarde les clients qui n'ont pas encore donne leur avis et envoie des relances. Maximum 2 relances, pas plus.
+        Un cron tourne tous les jours à 9h. Il regarde les clients qui n'ont pas encore donné leur avis et envoie des relances. Maximum 2 relances, pas plus.
       </p>
     </div>
     <div class="anim neo-card p-6 sm:p-8">
@@ -793,13 +793,13 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
     </div>
     <div class="anim neo-card p-6 sm:p-8">
       <div class="bg-neo-gray p-4 mb-4 border-l-4 border-neo-black">
-        <p class="text-sm font-space italic">"Très bon service, Marie a été tres reactive pour mon contrat habitation. Seul bémol, le parking est difficile."</p>
+        <p class="text-sm font-space italic">"Très bon service, Marie a été très réactive pour mon contrat habitation. Seul bémol, le parking est difficile."</p>
         <div class="text-xs mt-1 text-gray-400">Note: 4/5</div>
       </div>
       <div class="font-mono text-xs bg-neo-dark text-gray-300 p-4 mb-4">
 <pre>{
   "sentiment": "positif",
-  "thème": "service client",
+  "theme": "service client",
   "points_friction": ["parking difficile"],
   "suggestion_réponse": "Bonjour, merci pour
     ce retour ! Marie sera ravie. Concernant
@@ -886,7 +886,7 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
       <div class="section-number mb-4">23 / SYNC AVIS GOOGLE</div>
       <h2 class="font-grotesk text-4xl sm:text-5xl font-bold mb-6">Les avis Google se synchronisent tout seuls.</h2>
       <p class="text-lg text-gray-500 font-space mb-8">
-        Tous les jours à 6h, un cron va scraper les avis Google de chaque courtier. Quand un nouvel avis arrive, il est importe et l'IA génère 3 suggestions de réponse. Le courtier peut aussi lancer une sync manuelle quand il veut.
+        Tous les jours à 6h, un cron va scraper les avis Google de chaque courtier. Quand un nouvel avis arrive, il est importé et l'IA génère 3 suggestions de réponse. Le courtier peut aussi lancer une sync manuelle quand il veut.
       </p>
     </div>
     <div class="anim neo-card p-6">
@@ -1044,7 +1044,7 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
 <pre>POST /api/webhook/brio
 Headers: { "x-webhook-secret": "cle-du-courtier" }
 Body: {
-  "client_prénom": "Pierre",
+  "client_prenom": "Pierre",
   "client_nom": "Dupont",
   "client_email": "pierre@email.com"
 }</pre>
@@ -1133,7 +1133,7 @@ Body: {
       <div class="neo-card p-6 sm:p-8" style="background:rgba(255,255,255,.05);border-color:#333;box-shadow:4px 4px 0 rgba(255,255,255,.1)">
         <h4 class="font-grotesk font-bold mb-4">Comment ça marche :</h4>
         <div class="space-y-3 text-sm font-space text-gray-300">
-          <div class="flex items-start gap-3"><span class="text-white font-bold">1.</span> Le courtier connecté sa boite mail pendant l'onboarding (un clic, OAuth)</div>
+          <div class="flex items-start gap-3"><span class="text-white font-bold">1.</span> Le courtier connecte sa boite mail pendant l'onboarding (un clic, OAuth)</div>
           <div class="flex items-start gap-3"><span class="text-white font-bold">2.</span> On récupère un access_token + refresh_token</div>
           <div class="flex items-start gap-3"><span class="text-white font-bold">3.</span> Les tokens sont <strong class="text-white">chiffrés en AES-256-GCM</strong> avant d'aller en base</div>
           <div class="flex items-start gap-3"><span class="text-white font-bold">4.</span> À chaque envoi : déchiffrement &rarr; appel API Microsoft Graph ou Gmail &rarr; email envoyé</div>
@@ -1165,7 +1165,7 @@ Body: {
       </div>
       <div class="anim neo-card p-6">
         <h3 class="font-grotesk font-bold text-lg mb-3">Gmail</h3>
-        <p class="text-sm text-gray-600 font-space mb-3">Via <strong>Gmail API</strong>. Même principe. C'est le fallback si le courtier n'a pas Microsoft. Le refresh de tokens est mieux gère dans le code actuel.</p>
+        <p class="text-sm text-gray-600 font-space mb-3">Via <strong>Gmail API</strong>. Même principe. C'est le fallback si le courtier n'a pas Microsoft. Le refresh de tokens est mieux géré dans le code actuel.</p>
         <div class="space-y-1 text-xs font-mono text-gray-400">
           <div class="bg-neo-gray p-2">GET /api/auth/gmail</div>
           <div class="bg-neo-gray p-2">GET /api/auth/gmail/callback</div>
@@ -1185,7 +1185,7 @@ Body: {
       <div class="section-number mb-4">33 / OU J'EN SUIS SUR LES EMAILS</div>
       <h2 class="font-grotesk text-4xl sm:text-5xl font-bold mb-6">J'ai réussi en partie.</h2>
       <p class="text-lg text-gray-500 font-space leading-relaxed mb-8">
-        C'est clairement la partie qui m'a pris le plus de temps sur tout le projet. La connexion OAuth, le chiffrement des tokens, le refresh automatique, les appels aux APIs Microsoft et Google... C'est technique et il y a beaucoup de cas a gérer.
+        C'est clairement la partie qui m'a pris le plus de temps sur tout le projet. La connexion OAuth, le chiffrement des tokens, le refresh automatique, les appels aux APIs Microsoft et Google... C'est technique et il y a beaucoup de cas à gérer.
       </p>
     </div>
     <div class="anim neo-card p-6 sm:p-8">
@@ -1200,7 +1200,7 @@ Body: {
       </div>
       <h4 class="font-grotesk font-bold mb-4">Ce qui reste pour la v2 :</h4>
       <div class="space-y-2 text-sm font-space">
-        <div class="flex items-start gap-2"><span class="check-todo">&#9744;</span> Programmer la partie campagne pour que le courtier connecté son Gmail ou Outlook et que les mails partent automatiquement depuis sa boite</div>
+        <div class="flex items-start gap-2"><span class="check-todo">&#9744;</span> Programmer la partie campagne pour que le courtier connecte son Gmail ou Outlook et que les mails partent automatiquement depuis sa boite</div>
         <div class="flex items-start gap-2"><span class="check-todo">&#9744;</span> Gestion robuste du refresh token Microsoft (qui expire plus vite que Gmail)</div>
         <div class="flex items-start gap-2"><span class="check-todo">&#9744;</span> Interface dans les paramètres pour gérer la connexion email</div>
       </div>
@@ -1312,31 +1312,7 @@ Body: {
 </section>
 
 <!-- ============================================ -->
-<!-- SECTION 38 — PLUS TARD -->
-<!-- ============================================ -->
-<section class="py-20 px-4" style="border-top:3px solid #0a0a0a">
-  <div class="max-w-4xl mx-auto">
-    <div class="anim">
-      <div class="section-number mb-4">38 / POUR PLUS TARD</div>
-      <h2 class="font-grotesk text-4xl sm:text-5xl font-bold mb-6">Idées pour la suite.</h2>
-    </div>
-    <div class="anim neo-card p-6 sm:p-8">
-      <div class="neo-card-sm bg-gray-300 text-neo-black px-3 py-1 text-xs font-bold inline-block mb-4">QUAND ON AURA LE TEMPS</div>
-      <div class="space-y-3 text-sm font-space">
-        <div class="flex items-start gap-2"><span class="check-todo">&#9744;</span> Multi-langue (néerlandais, anglais)</div>
-        <div class="flex items-start gap-2"><span class="check-todo">&#9744;</span> Dashboard multi-courtiers (vision manager)</div>
-        <div class="flex items-start gap-2"><span class="check-todo">&#9744;</span> Facturation / Stripe</div>
-        <div class="flex items-start gap-2"><span class="check-todo">&#9744;</span> PWA / Notifications push mobile</div>
-        <div class="flex items-start gap-2"><span class="check-todo">&#9744;</span> Templates email personnalisables par le courtier</div>
-        <div class="flex items-start gap-2"><span class="check-todo">&#9744;</span> A/B testing sur les emails</div>
-        <div class="flex items-start gap-2"><span class="check-todo">&#9744;</span> Documentation API (Swagger) pour les intégrateurs CRM</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================ -->
-<!-- SECTION 39 — DÉPLOIEMENT -->
+<!-- SECTION 38 — DÉPLOIEMENT -->
 <!-- ============================================ -->
 <section class="py-20 px-4 bg-neo-gray" style="border-top:3px solid #0a0a0a">
   <div class="max-w-4xl mx-auto">
