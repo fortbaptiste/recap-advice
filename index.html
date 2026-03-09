@@ -7,7 +7,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
-tailwind.config={theme:{extend:{fontFamily:{'inter':['Inter','sans-serif'],'grotesk':['Space Grotesk','sans-serif'],'mono':['JetBrains Mono','monospace'],'space':['Space Mono','monospace']},colors:{'neo':{'black':'#0a0a0a','white':'#fefefe','blue':'#0a0a0a','purple':'#0a0a0a','pink':'#0a0a0a','orange':'#0a0a0a','green':'#0a0a0a','yellow':'#e5e5e5','red':'#0a0a0a','cyan':'#0a0a0a','gray':'#f5f5f5','dark':'#0a0a0a'}}}}}
+tailwind.config={thème:{extend:{fontFamily:{'inter':['Inter','sans-serif'],'grotesk':['Space Grotesk','sans-serif'],'mono':['JetBrains Mono','monospace'],'space':['Space Mono','monospace']},colors:{'neo':{'black':'#0a0a0a','white':'#fefefe','blue':'#0a0a0a','purple':'#0a0a0a','pink':'#0a0a0a','orange':'#0a0a0a','green':'#0a0a0a','yellow':'#e5e5e5','red':'#0a0a0a','cyan':'#0a0a0a','gray':'#f5f5f5','dark':'#0a0a0a'}}}}}
 </script>
 <style>
 *{scroll-behavior:smooth;margin:0;padding:0;box-sizing:border-box}
@@ -102,8 +102,8 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
         <a href="https://hibroker-advice.vercel.app/" target="_blank" class="neo-btn bg-neo-black text-white px-6 py-3 font-mono text-sm inline-flex items-center gap-2">
           hibroker-advice.vercel.app &#8599;
         </a>
-        <p>Pour le moment ça tourne sur <strong>Vercel</strong> (hébergement cloud). Ensuite on fera tourner ça sur le VPS pour avoir plus de controle.</p>
-        <p>Dans cette page je vais t'expliquer tout ce qui a ete fait, comment ça marche, et ce qu'il reste a faire. Pas de blabla, juste les faits.</p>
+        <p>Pour le moment ça tourne sur <strong>Vercel</strong> (hébergement cloud). Ensuite on fera tourner ça sur le VPS pour avoir plus de contrôle.</p>
+        <p>Dans cette page je vais t'expliquer tout ce qui a été fait, comment ça marche, et ce qu'il reste à faire. Pas de blabla, juste les faits.</p>
       </div>
     </div>
     <div class="anim">
@@ -120,10 +120,10 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
 <section id="onboarding" class="py-20 px-4 bg-neo-dark text-white" style="border-top:3px solid #0a0a0a">
   <div class="max-w-4xl mx-auto">
     <div class="anim">
-      <div class="section-number text-gray-400 mb-4">02 / LE POINT DE DEPART</div>
+      <div class="section-number text-gray-400 mb-4">02 / LE POINT DE DÉPART</div>
       <h2 class="font-grotesk text-4xl sm:text-5xl font-bold mb-6">Tout commence par l'onboarding.</h2>
       <p class="text-lg text-gray-400 font-space leading-relaxed mb-8">
-        Quand un courtier arrive sur Advice pour la première fois, il passe par un <strong class="text-white">wizard en 6 étapes</strong>. En 2-3 minutes, tout est configure : son compte, son cabinet, sa fiche Google, son image de marque, et les reglages de l'IA. Apres ça, il est opérationnel.
+        Quand un courtier arrive sur Advice pour la première fois, il passe par un <strong class="text-white">wizard en 6 étapes</strong>. En 2-3 minutes, tout est configuré : son compte, son cabinet, sa fiche Google, son image de marque, et les réglages de l'IA. Après ça, il est opérationnel.
       </p>
       <div class="flex flex-wrap gap-3 mb-10">
         <div class="neo-card-sm bg-white/10 px-4 py-2 font-mono text-sm">6 étapes</div>
@@ -152,8 +152,8 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
     <div class="anim neo-card p-6 sm:p-8 flex flex-col sm:flex-row gap-6">
       <div class="neo-card-sm bg-neo-black text-white w-14 h-14 flex-shrink-0 flex items-center justify-center font-mono font-bold text-xl">1</div>
       <div>
-        <p class="text-gray-600 font-space mb-4">Le courtier entre son <strong>prenom</strong>, <strong>nom</strong>, <strong>email</strong> et <strong>mot de passe</strong>. C'est tout.</p>
-        <p class="text-gray-600 font-space mb-4">En coulisse, Supabase Auth crée le compte. Et un trigger automatique dans la base de données cree sa fiche courtier. Le courtier ne voit rien de tout ça, c'est instantane.</p>
+        <p class="text-gray-600 font-space mb-4">Le courtier entre son <strong>prénom</strong>, <strong>nom</strong>, <strong>email</strong> et <strong>mot de passe</strong>. C'est tout.</p>
+        <p class="text-gray-600 font-space mb-4">En coulisse, Supabase Auth crée le compte. Et un trigger automatique dans la base de données crée sa fiche courtier. Le courtier ne voit rien de tout ça, c'est instantané.</p>
         <div class="code-block bg-neo-gray p-3 text-xs text-gray-500 mb-4">
           Inscription &rarr; Supabase Auth &rarr; trigger handle_new_user() &rarr; fiche courtier créée
         </div>
@@ -180,7 +180,7 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
       <div class="neo-card-sm bg-neo-black text-white w-14 h-14 flex-shrink-0 flex items-center justify-center font-mono font-bold text-xl">2</div>
       <div>
         <p class="text-gray-600 font-space mb-4">Le courtier choisit son <strong>pays</strong> (France ou Belgique), entre le <strong>nom du cabinet</strong>, le <strong>SIRET</strong>, et son <strong>adresse</strong>.</p>
-        <p class="text-gray-600 font-space mb-4">Le pays est important parce qu'il détermine la réglementation : <strong>ACPR</strong> en France, <strong>FSMA</strong> en Belgique. Ca change les délais de traitement des réclamations et les mentions legales.</p>
+        <p class="text-gray-600 font-space mb-4">Le pays est important parce qu'il détermine la réglementation : <strong>ACPR</strong> en France, <strong>FSMA</strong> en Belgique. Ça change les délais de traitement des réclamations et les mentions légales.</p>
         <div class="flex flex-wrap gap-2 mt-3">
           <span class="neo-card-sm bg-white px-3 py-1 text-xs font-mono">pays: FR | BE</span>
           <span class="neo-card-sm bg-white px-3 py-1 text-xs font-mono">cabinet</span>
@@ -217,7 +217,7 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
       <div class="neo-card-sm bg-neo-black text-white w-14 h-14 flex-shrink-0 flex items-center justify-center font-mono font-bold text-xl">3</div>
       <div>
         <p class="text-gray-600 font-space mb-4">Le courtier colle l'URL de sa fiche <strong>Google Maps</strong>. L'app récupère automatiquement son <code class="bg-neo-gray px-1">place_id</code> Google.</p>
-        <p class="text-gray-600 font-space mb-4">C'est grace a ce place_id que l'app pourra ensuite <strong>scraper ses avis Google</strong>, détecter les nouveaux avis, et proposer des réponses. Sans ça, pas de lien avec Google.</p>
+        <p class="text-gray-600 font-space mb-4">C'est grâce à ce place_id que l'app pourra ensuite <strong>scraper ses avis Google</strong>, détecter les nouveaux avis, et proposer des réponses. Sans ça, pas de lien avec Google.</p>
         <div class="code-block bg-neo-dark text-gray-300 p-3 text-xs">
           URL Google Maps &rarr; Apify &rarr; place_id: ChIJ... &rarr; stocké en base
         </div>
@@ -240,7 +240,7 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
       <div class="section-number mb-4">TUTO / COMMENT RÉCUPÉRER LE BON LIEN</div>
       <h2 class="font-grotesk text-4xl sm:text-5xl font-bold mb-6">Trouver son URL Google Maps.</h2>
       <p class="text-lg text-gray-500 font-space mb-8">
-        Pour que la connexion Google fonctionne, le courtier doit coller le bon lien. C'est simple, mais il faut savoir ou le trouver. Voici comment faire :
+        Pour que la connexion Google fonctionne, le courtier doit coller le bon lien. C'est simple, mais il faut savoir où le trouver. Voici comment faire :
       </p>
     </div>
     <div class="anim neo-card p-6 sm:p-8">
@@ -249,7 +249,7 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
           <div class="w-8 h-8 bg-neo-black text-white flex-shrink-0 flex items-center justify-center font-mono font-bold text-sm neo-border-2">1</div>
           <div>
             <h4 class="font-bold mb-1">Chercher son cabinet sur Google</h4>
-            <p class="text-gray-500 text-sm font-space">Le courtier tape le nom de son cabinet dans Google (par exemple "Audrey Delaspre courtiercredit93"). La fiche Google apparait a droite.</p>
+            <p class="text-gray-500 text-sm font-space">Le courtier tape le nom de son cabinet dans Google (par exemple "Audrey Delaspre courtiercredit93"). La fiche Google apparaît à droite.</p>
           </div>
         </div>
         <div class="flex items-start gap-4">
@@ -299,7 +299,7 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
       <div class="neo-card-sm bg-neo-black text-white w-14 h-14 flex-shrink-0 flex items-center justify-center font-mono font-bold text-xl">4</div>
       <div>
         <p class="text-gray-600 font-space mb-4">Le courtier choisit sa <strong>couleur primaire</strong> (un color picker avec des presets) et peut uploader son <strong>logo</strong>.</p>
-        <p class="text-gray-600 font-space mb-4">Le logo est stocké dans Supabase Storage. La couleur et le logo sont utilises sur la <strong>page d'avis</strong> que les clients voient, et dans les <strong>emails</strong>. Comme ça, tout est aux couleurs du courtier.</p>
+        <p class="text-gray-600 font-space mb-4">Le logo est stocké dans Supabase Storage. La couleur et le logo sont utilisés sur la <strong>page d'avis</strong> que les clients voient, et dans les <strong>emails</strong>. Comme ça, tout est aux couleurs du courtier.</p>
         <div class="flex items-center gap-3 mt-3">
           <div class="w-8 h-8 bg-black neo-border-2"></div>
           <div class="w-8 h-8 bg-gray-500 neo-border-2"></div>
@@ -329,7 +329,7 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
       <div class="neo-card-sm bg-neo-black text-white w-14 h-14 flex-shrink-0 flex items-center justify-center font-mono font-bold text-xl">5</div>
       <div>
         <p class="text-gray-600 font-space mb-4">Le courtier choisit son <strong>ton de communication</strong> : formel ou décontracté. Et il entre sa <strong>spécialité</strong> (auto, habitation, credit, vie...).</p>
-        <p class="text-gray-600 font-space mb-4">Ces infos sont injectees dans chaque prompt IA. Du coup, quand l'IA génère une réponse a un avis, elle parle comme le courtier, pas comme un robot générique.</p>
+        <p class="text-gray-600 font-space mb-4">Ces infos sont injectées dans chaque prompt IA. Du coup, quand l'IA génère une réponse à un avis, elle parle comme le courtier, pas comme un robot générique.</p>
         <div class="grid sm:grid-cols-2 gap-3 mt-3">
           <div class="bg-neo-gray p-3 border-l-4 border-neo-black text-xs font-space">
             <strong>Formel :</strong> "Madame, nous avons bien pris note de votre retour..."
@@ -378,17 +378,17 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
 <section class="py-20 px-4" style="border-top:3px solid #0a0a0a">
   <div class="max-w-4xl mx-auto">
     <div class="anim">
-      <div class="section-number mb-4">09 / APRES L'ONBOARDING</div>
+      <div class="section-number mb-4">09 / APRÈS L'ONBOARDING</div>
       <h2 class="font-grotesk text-4xl sm:text-5xl font-bold mb-6">La config se fait toute seule.</h2>
       <p class="text-lg text-gray-500 font-space mb-8">
-        Une fois que le courtier valide, l'app enchaine automatiquement 5 taches en arrière-plan. Il voit une barre de progression.
+        Une fois que le courtier valide, l'app enchaîne automatiquement 5 tâches en arrière-plan. Il voit une barre de progression.
       </p>
     </div>
     <div class="anim neo-card p-6 sm:p-8">
       <div class="space-y-4">
         <div class="flex items-center gap-4 p-3 bg-neo-gray">
           <span class="text-neo-black font-bold">&#10003;</span>
-          <span class="font-space text-sm"><strong>Création du compte</strong> &mdash; enregistrément en base</span>
+          <span class="font-space text-sm"><strong>Création du compte</strong> &mdash; enregistrement en base</span>
         </div>
         <div class="flex items-center gap-4 p-3 bg-neo-gray">
           <span class="text-neo-black font-bold">&#10003;</span>
@@ -400,14 +400,14 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
         </div>
         <div class="flex items-center gap-4 p-3 bg-neo-gray">
           <span class="text-neo-black font-bold">&#10003;</span>
-          <span class="font-space text-sm"><strong>Generation des réponses IA</strong> &mdash; Claude analyse chaque avis Google et génère des suggestions</span>
+          <span class="font-space text-sm"><strong>Génération des réponses IA</strong> &mdash; Claude analyse chaque avis Google et génère des suggestions</span>
         </div>
         <div class="flex items-center gap-4 p-3 bg-neo-gray">
           <span class="text-neo-black font-bold">&#10003;</span>
           <span class="font-space text-sm"><strong>Détection des concurrents</strong> &mdash; cherche les courtiers proches sur Google Maps</span>
         </div>
       </div>
-      <p class="text-sm text-gray-400 font-space mt-6">Quand tout est fini, le courtier est redirigé vers son dashboard. Il est prêt a bosser.</p>
+      <p class="text-sm text-gray-400 font-space mt-6">Quand tout est fini, le courtier est redirigé vers son dashboard. Il est prêt à bosser.</p>
     </div>
     <div class="anim mt-6">
       <div class="neo-card p-2">
@@ -426,21 +426,21 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
       <div class="section-number text-gray-400 mb-4">10 / COMMENT C'EST CONSTRUIT</div>
       <h2 class="font-grotesk text-4xl sm:text-5xl font-bold mb-6">La stack technique.</h2>
       <p class="text-lg text-gray-400 font-space leading-relaxed mb-10">
-        Pas besoin de comprendre tout le detail technique. L'idee c'est que tu saches sur quoi ça repose et pourquoi ces choix.
+        Pas besoin de comprendre tout le détail technique. L'idée c'est que tu saches sur quoi ça repose et pourquoi ces choix.
       </p>
     </div>
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
       <div class="anim neo-card p-6" style="background:rgba(255,255,255,.05);border-color:#333;box-shadow:4px 4px 0 rgba(255,255,255,.1)">
         <h3 class="font-bold font-grotesk mb-2 text-white">Next.js 16</h3>
-        <p class="text-sm text-gray-400 font-space">Le framework principal. C'est lui qui gere tout : les pages, les API, le rendu. Un seul projet pour le front et le back.</p>
+        <p class="text-sm text-gray-400 font-space">Le framework principal. C'est lui qui gère tout : les pages, les API, le rendu. Un seul projet pour le front et le back.</p>
       </div>
       <div class="anim neo-card p-6" style="background:rgba(255,255,255,.05);border-color:#333;box-shadow:4px 4px 0 rgba(255,255,255,.1)">
         <h3 class="font-bold font-grotesk mb-2 text-white">TypeScript</h3>
-        <p class="text-sm text-gray-400 font-space">Comme du JavaScript, mais avec des types. Ca évite les bugs idiots et ça rend le code plus solide.</p>
+        <p class="text-sm text-gray-400 font-space">Comme du JavaScript, mais avec des types. Ça évite les bugs idiots et ça rend le code plus solide.</p>
       </div>
       <div class="anim neo-card p-6" style="background:rgba(255,255,255,.05);border-color:#333;box-shadow:4px 4px 0 rgba(255,255,255,.1)">
         <h3 class="font-bold font-grotesk mb-2 text-white">TailwindCSS v4</h3>
-        <p class="text-sm text-gray-400 font-space">Pour le design. On ecrit le style directement dans le HTML. C'est rapide et ça garde tout cohérent.</p>
+        <p class="text-sm text-gray-400 font-space">Pour le design. On écrit le style directement dans le HTML. C'est rapide et ça garde tout cohérent.</p>
       </div>
       <div class="anim neo-card p-6" style="background:rgba(255,255,255,.05);border-color:#333;box-shadow:4px 4px 0 rgba(255,255,255,.1)">
         <h3 class="font-bold font-grotesk mb-2 text-white">Supabase</h3>
@@ -448,7 +448,7 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
       </div>
       <div class="anim neo-card p-6" style="background:rgba(255,255,255,.05);border-color:#333;box-shadow:4px 4px 0 rgba(255,255,255,.1)">
         <h3 class="font-bold font-grotesk mb-2 text-white">Claude AI (Anthropic)</h3>
-        <p class="text-sm text-gray-400 font-space">L'IA qui analyse les avis et génère les réponses. Deux modèles : Haiku (rapide, pas cher) et Sonnet (plus qualite).</p>
+        <p class="text-sm text-gray-400 font-space">L'IA qui analyse les avis et génère les réponses. Deux modèles : Haiku (rapide, pas cher) et Sonnet (plus qualité).</p>
       </div>
       <div class="anim neo-card p-6" style="background:rgba(255,255,255,.05);border-color:#333;box-shadow:4px 4px 0 rgba(255,255,255,.1)">
         <h3 class="font-bold font-grotesk mb-2 text-white">Apify</h3>
@@ -464,7 +464,7 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
       </div>
       <div class="anim neo-card p-6" style="background:rgba(255,255,255,.05);border-color:#333;box-shadow:4px 4px 0 rgba(255,255,255,.1)">
         <h3 class="font-bold font-grotesk mb-2 text-white">OAuth (MS365 + Gmail)</h3>
-        <p class="text-sm text-gray-400 font-space">Pour les emails. L'idee c'est que les mails partent de la boite du courtier, pas d'un service tiers.</p>
+        <p class="text-sm text-gray-400 font-space">Pour les emails. L'idée c'est que les mails partent de la boite du courtier, pas d'un service tiers.</p>
       </div>
     </div>
   </div>
@@ -491,15 +491,15 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
         </div>
         <div class="neo-card p-5">
           <h4 class="font-bold font-grotesk mb-1">campagnes</h4>
-          <p class="text-xs text-gray-500 font-space">Les campagnes de sollicitation. Nom, statut, compteurs (envoyés, ouverts, completes).</p>
+          <p class="text-xs text-gray-500 font-space">Les campagnes de sollicitation. Nom, statut, compteurs (envoyés, ouverts, complétés).</p>
         </div>
         <div class="neo-card p-5">
           <h4 class="font-bold font-grotesk mb-1">sollicitations</h4>
-          <p class="text-xs text-gray-500 font-space">Chaque client sollicite. Token unique, statut, relances, opt-out.</p>
+          <p class="text-xs text-gray-500 font-space">Chaque client sollicité. Token unique, statut, relances, opt-out.</p>
         </div>
         <div class="neo-card p-5">
           <h4 class="font-bold font-grotesk mb-1">avis_internes</h4>
-          <p class="text-xs text-gray-500 font-space">Les avis recus via la page tampon. Note, texte, sentiment, theme, suggestion IA.</p>
+          <p class="text-xs text-gray-500 font-space">Les avis reçus via la page tampon. Note, texte, sentiment, thème, suggestion IA.</p>
         </div>
         <div class="neo-card p-5">
           <h4 class="font-bold font-grotesk mb-1">alertes</h4>
@@ -507,11 +507,11 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
         </div>
         <div class="neo-card p-5">
           <h4 class="font-bold font-grotesk mb-1">avis_google</h4>
-          <p class="text-xs text-gray-500 font-space">Les avis Google scrapes. Auteur, note, texte, 3 suggestions de réponse IA.</p>
+          <p class="text-xs text-gray-500 font-space">Les avis Google scrapés. Auteur, note, texte, 3 suggestions de réponse IA.</p>
         </div>
         <div class="neo-card p-5">
           <h4 class="font-bold font-grotesk mb-1">concurrents</h4>
-          <p class="text-xs text-gray-500 font-space">Les courtiers concurrents surveilles. Note, nb avis, évolution.</p>
+          <p class="text-xs text-gray-500 font-space">Les courtiers concurrents surveillés. Note, nb avis, évolution.</p>
         </div>
         <div class="neo-card p-5">
           <h4 class="font-bold font-grotesk mb-1">connections</h4>
@@ -537,14 +537,14 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
     <div class="grid sm:grid-cols-2 gap-6">
       <div class="anim neo-card p-6">
         <h3 class="font-grotesk font-bold text-lg mb-3">Claude Haiku</h3>
-        <p class="text-sm text-gray-600 font-space mb-3">Le modèle rapide et pas cher. C'est lui qui analyse chaque avis interne : il détecte le <strong>sentiment</strong> (positif/neutre/négatif), le <strong>theme</strong> (service, tarif, délai...), les <strong>points de friction</strong>, et il génère une <strong>suggestion de réponse</strong>.</p>
+        <p class="text-sm text-gray-600 font-space mb-3">Le modèle rapide et pas cher. C'est lui qui analyse chaque avis interne : il détecte le <strong>sentiment</strong> (positif/neutre/négatif), le <strong>thème</strong> (service, tarif, délai...), les <strong>points de friction</strong>, et il génère une <strong>suggestion de réponse</strong>.</p>
         <div class="code-block bg-neo-gray p-3 text-xs text-gray-500">
           Avis arrive &rarr; Haiku analyse &rarr; JSON structure en retour
         </div>
       </div>
       <div class="anim neo-card p-6">
         <h3 class="font-grotesk font-bold text-lg mb-3">Claude Sonnet</h3>
-        <p class="text-sm text-gray-600 font-space mb-3">Le modèle plus puissant. C'est lui qui génère les <strong>3 suggestions de réponse</strong> pour les avis Google (professionnel, empathique, direct). La qualite doit etre au top parce que ces réponses vont sur Google.</p>
+        <p class="text-sm text-gray-600 font-space mb-3">Le modèle plus puissant. C'est lui qui génère les <strong>3 suggestions de réponse</strong> pour les avis Google (professionnel, empathique, direct). La qualité doit être au top parce que ces réponses vont sur Google.</p>
         <div class="code-block bg-neo-gray p-3 text-xs text-gray-500">
           Avis Google &rarr; Sonnet &rarr; 3 réponses au choix
         </div>
@@ -573,13 +573,13 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
     <div class="anim neo-card p-6 sm:p-8">
       <h4 class="font-grotesk font-bold mb-4">Ce qu'Apify fait pour nous :</h4>
       <div class="space-y-3 text-sm font-space">
-        <div class="flex items-start gap-3"><span class="font-bold">&#8226;</span> Recupere les avis Google du courtier (nouveaux, modifies, supprimés)</div>
-        <div class="flex items-start gap-3"><span class="font-bold">&#8226;</span> Detecte les courtiers concurrents par zone géographique</div>
+        <div class="flex items-start gap-3"><span class="font-bold">&#8226;</span> Récupère les avis Google du courtier (nouveaux, modifiés, supprimés)</div>
+        <div class="flex items-start gap-3"><span class="font-bold">&#8226;</span> Détecte les courtiers concurrents par zone géographique</div>
         <div class="flex items-start gap-3"><span class="font-bold">&#8226;</span> Suit l'évolution des notes des concurrents chaque semaine</div>
-        <div class="flex items-start gap-3"><span class="font-bold">&#8226;</span> Tout ça tourne automatiquement avec des cron jobs (taches planifiées)</div>
+        <div class="flex items-start gap-3"><span class="font-bold">&#8226;</span> Tout ça tourne automatiquement avec des cron jobs (tâches planifiées)</div>
       </div>
       <div class="mt-4 p-3 bg-neo-gray text-xs font-mono text-gray-500">
-        Acteur Apify: compass~crawler-google-places &mdash; jusqu'a 40 avis par fiche
+        Acteur Apify: compass~crawler-google-places &mdash; jusqu'à 40 avis par fiche
       </div>
     </div>
   </div>
@@ -594,7 +594,7 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
       <div class="section-number text-gray-400 mb-4">14 / LE DASHBOARD</div>
       <h2 class="font-grotesk text-4xl sm:text-5xl font-bold mb-6">Ce que le courtier voit en premier.</h2>
       <p class="text-lg text-gray-400 font-space mb-10">
-        Quand il se connecte, il arrive sur son tableau de bord. 4 chiffres clés en haut, des graphiques, et les derniers avis.
+        Quand il se connecté, il arrive sur son tableau de bord. 4 chiffres clés en haut, des graphiques, et les derniers avis.
       </p>
     </div>
     <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
@@ -620,7 +620,7 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
       <div class="grid sm:grid-cols-2 gap-3 text-sm text-gray-300 font-space">
         <div class="flex items-start gap-2"><span class="font-bold">&#8226;</span> Camembert des sentiments (positif/neutre/négatif)</div>
         <div class="flex items-start gap-2"><span class="font-bold">&#8226;</span> Courbe d'évolution des notes sur 30 jours</div>
-        <div class="flex items-start gap-2"><span class="font-bold">&#8226;</span> Les 5 derniers avis recus</div>
+        <div class="flex items-start gap-2"><span class="font-bold">&#8226;</span> Les 5 derniers avis reçus</div>
         <div class="flex items-start gap-2"><span class="font-bold">&#8226;</span> Flèches de tendance sur chaque KPI</div>
       </div>
     </div>
@@ -628,7 +628,7 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
 </section>
 
 <!-- ============================================ -->
-<!-- SECTION 15 — CREER UNE CAMPAGNE -->
+<!-- SECTION 15 — CRÉER UNE CAMPAGNE -->
 <!-- ============================================ -->
 <section class="py-20 px-4" style="border-top:3px solid #0a0a0a">
   <div class="max-w-4xl mx-auto">
@@ -636,7 +636,7 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
       <div class="section-number mb-4">15 / LES CAMPAGNES</div>
       <h2 class="font-grotesk text-4xl sm:text-5xl font-bold mb-6">Comment le courtier demande des avis.</h2>
       <p class="text-lg text-gray-500 font-space mb-8">
-        Le courtier cree une campagne, ajoute ses clients (un par un ou par CSV), personnalise le message, et envoie. Chaque client reçoit un email avec un lien unique.
+        Le courtier crée une campagne, ajoute ses clients (un par un ou par CSV), personnalisé le message, et envoie. Chaque client reçoit un email avec un lien unique.
       </p>
     </div>
     <div class="anim neo-card p-6 sm:p-8">
@@ -645,28 +645,28 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
           <div class="w-8 h-8 bg-neo-black text-white flex-shrink-0 flex items-center justify-center font-mono font-bold text-sm neo-border-2">1</div>
           <div>
             <h4 class="font-bold mb-1">Il donne un nom</h4>
-            <p class="text-gray-500 text-sm font-space">Exemple : "Clients janvier" ou "Apres sinistres"</p>
+            <p class="text-gray-500 text-sm font-space">Exemple : "Clients janvier" ou "Après sinistres"</p>
           </div>
         </div>
         <div class="flex items-start gap-4">
           <div class="w-8 h-8 bg-neo-black text-white flex-shrink-0 flex items-center justify-center font-mono font-bold text-sm neo-border-2">2</div>
           <div>
             <h4 class="font-bold mb-1">Il ajoute ses clients</h4>
-            <p class="text-gray-500 text-sm font-space">Saisie manuelle (prenom, nom, email) ou import CSV. 1 client ou 150, ça marche pareil.</p>
+            <p class="text-gray-500 text-sm font-space">Saisie manuelle (prénom, nom, email) ou import CSV. 1 client ou 150, ça marche pareil.</p>
           </div>
         </div>
         <div class="flex items-start gap-4">
           <div class="w-8 h-8 bg-neo-black text-white flex-shrink-0 flex items-center justify-center font-mono font-bold text-sm neo-border-2">3</div>
           <div>
-            <h4 class="font-bold mb-1">Il personnalise le message</h4>
-            <p class="text-gray-500 text-sm font-space">Variables <code class="bg-neo-gray px-1">{prenom}</code> et <code class="bg-neo-gray px-1">{cabinet}</code>. Preview avant envoi.</p>
+            <h4 class="font-bold mb-1">Il personnalisé le message</h4>
+            <p class="text-gray-500 text-sm font-space">Variables <code class="bg-neo-gray px-1">{prénom}</code> et <code class="bg-neo-gray px-1">{cabinet}</code>. Preview avant envoi.</p>
           </div>
         </div>
         <div class="flex items-start gap-4">
           <div class="w-8 h-8 bg-neo-black text-white flex-shrink-0 flex items-center justify-center font-mono font-bold text-sm neo-border-2">4</div>
           <div>
             <h4 class="font-bold mb-1">Il envoie</h4>
-            <p class="text-gray-500 text-sm font-space">Chaque client reçoit un email avec un <strong>token unique de 48 octets</strong>. Le lien ressemble a : <code class="bg-neo-gray px-1">app.hibroker.fr/tampon/a7f3e9...</code></p>
+            <p class="text-gray-500 text-sm font-space">Chaque client reçoit un email avec un <strong>token unique de 48 octets</strong>. Le lien ressemble à : <code class="bg-neo-gray px-1">app.hibroker.fr/tampon/a7f3e9...</code></p>
           </div>
         </div>
       </div>
@@ -681,9 +681,9 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
   <div class="max-w-4xl mx-auto">
     <div class="anim">
       <div class="section-number mb-4">16 / LA PAGE TAMPON</div>
-      <h2 class="font-grotesk text-4xl sm:text-5xl font-bold mb-6">La ou le client donne son avis.</h2>
+      <h2 class="font-grotesk text-4xl sm:text-5xl font-bold mb-6">Là où le client donne son avis.</h2>
       <p class="text-lg text-gray-500 font-space mb-8">
-        Le client clique sur le lien dans l'email. Il arrive sur une page simple, aux couleurs du courtier. Pas de compte a créer, rien a télécharger.
+        Le client cliqué sur le lien dans l'email. Il arrive sur une page simple, aux couleurs du courtier. Pas de compte à créer, rien à télécharger.
       </p>
     </div>
     <div class="anim neo-card p-6 sm:p-8">
@@ -701,7 +701,7 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
         <div class="bg-neo-gray p-2 text-sm text-gray-400 mb-3">Ton commentaire...</div>
         <div class="neo-btn bg-neo-black text-white px-4 py-1.5 text-xs inline-block">Envoyer</div>
       </div>
-      <h4 class="font-grotesk font-bold mb-3">Ce qui se passe apres :</h4>
+      <h4 class="font-grotesk font-bold mb-3">Ce qui se passe après :</h4>
       <div class="space-y-2 text-sm font-space">
         <div class="flex items-start gap-2"><span class="font-bold">1.</span> Le token est vérifié</div>
         <div class="flex items-start gap-2"><span class="font-bold">2.</span> L'avis est enregistré en base</div>
@@ -722,7 +722,7 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
       <div class="section-number mb-4">17 / LE ROUTAGE INTELLIGENT</div>
       <h2 class="font-grotesk text-4xl sm:text-5xl font-bold mb-6">Content &rarr; Google. Pas content &rarr; interne.</h2>
       <p class="text-lg text-gray-500 font-space mb-8">
-        C'est la logique centrale. On ne redirigé <strong>jamais</strong> un client mecontent vers Google. Les bons avis vont sur Google, les mauvais restent en interne pour que le courtier puisse reagir.
+        C'est la logique centrale. On ne redirigé <strong>jamais</strong> un client mécontent vers Google. Les bons avis vont sur Google, les mauvais restent en interne pour que le courtier puisse réagir.
       </p>
     </div>
     <div class="grid sm:grid-cols-2 gap-6">
@@ -749,7 +749,7 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
       <div class="section-number mb-4">18 / LES RELANCES AUTOMATIQUES</div>
       <h2 class="font-grotesk text-4xl sm:text-5xl font-bold mb-6">J+0, J+2, J+5. Puis on arrête.</h2>
       <p class="text-lg text-gray-500 font-space mb-8">
-        Un cron tourne tous les jours a 9h. Il regarde les clients qui n'ont pas encore donne leur avis et envoie des relances. Maximum 2 relances, pas plus.
+        Un cron tourne tous les jours à 9h. Il regarde les clients qui n'ont pas encore donne leur avis et envoie des relances. Maximum 2 relances, pas plus.
       </p>
     </div>
     <div class="anim neo-card p-6 sm:p-8">
@@ -786,38 +786,38 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
   <div class="max-w-4xl mx-auto">
     <div class="anim">
       <div class="section-number mb-4">19 / L'ANALYSE IA</div>
-      <h2 class="font-grotesk text-4xl sm:text-5xl font-bold mb-6">Chaque avis est analyse par l'IA.</h2>
+      <h2 class="font-grotesk text-4xl sm:text-5xl font-bold mb-6">Chaque avis est analysé par l'IA.</h2>
       <p class="text-lg text-gray-500 font-space mb-8">
-        Des qu'un avis arrive, Claude l'analyse et retourne un JSON avec le sentiment, le theme, les frictions, et une suggestion de réponse.
+        Dès qu'un avis arrive, Claude l'analyse et retourne un JSON avec le sentiment, le thème, les frictions, et une suggestion de réponse.
       </p>
     </div>
     <div class="anim neo-card p-6 sm:p-8">
       <div class="bg-neo-gray p-4 mb-4 border-l-4 border-neo-black">
-        <p class="text-sm font-space italic">"Tres bon service, Marie a ete tres reactive pour mon contrat habitation. Seul bemol, le parking est difficile."</p>
+        <p class="text-sm font-space italic">"Très bon service, Marie a été tres reactive pour mon contrat habitation. Seul bémol, le parking est difficile."</p>
         <div class="text-xs mt-1 text-gray-400">Note: 4/5</div>
       </div>
       <div class="font-mono text-xs bg-neo-dark text-gray-300 p-4 mb-4">
 <pre>{
   "sentiment": "positif",
-  "theme": "service client",
+  "thème": "service client",
   "points_friction": ["parking difficile"],
   "suggestion_réponse": "Bonjour, merci pour
     ce retour ! Marie sera ravie. Concernant
     le parking, on en prend bonne note..."
 }</pre>
       </div>
-      <p class="text-sm text-gray-500 font-space">Ca se fait automatiquement, le courtier n'a rien a faire. Il voit le résultat sur la page de l'avis.</p>
+      <p class="text-sm text-gray-500 font-space">Ça se fait automatiquement, le courtier n'a rien à faire. Il voit le résultat sur la page de l'avis.</p>
     </div>
   </div>
 </section>
 
 <!-- ============================================ -->
-<!-- SECTION 20 — 3 REPONSES GOOGLE -->
+<!-- SECTION 20 — 3 RÉPONSES GOOGLE -->
 <!-- ============================================ -->
 <section class="py-20 px-4 bg-neo-gray" style="border-top:3px solid #0a0a0a">
   <div class="max-w-4xl mx-auto">
     <div class="anim">
-      <div class="section-number mb-4">20 / LES REPONSES GOOGLE</div>
+      <div class="section-number mb-4">20 / LES RÉPONSES GOOGLE</div>
       <h2 class="font-grotesk text-4xl sm:text-5xl font-bold mb-6">3 suggestions, le courtier choisit.</h2>
       <p class="text-lg text-gray-500 font-space mb-8">
         Pour chaque avis Google, Claude Sonnet génère 3 variantes de réponse. Le courtier choisit celle qui lui va, la copie, et la colle sur Google.
@@ -826,11 +826,11 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
     <div class="grid md:grid-cols-3 gap-5">
       <div class="anim neo-card p-5">
         <div class="neo-card-sm bg-neo-black text-white px-3 py-1 text-xs font-bold inline-block mb-3">PROFESSIONNEL</div>
-        <p class="text-sm italic text-gray-600 font-space">"Nous accusons reception de votre retour. Conformement a notre engagement qualite..."</p>
+        <p class="text-sm italic text-gray-600 font-space">"Nous accusons réception de votre retour. Conformément à notre engagement qualité..."</p>
       </div>
       <div class="anim neo-card p-5">
         <div class="neo-card-sm bg-gray-500 text-white px-3 py-1 text-xs font-bold inline-block mb-3">EMPATHIQUE</div>
-        <p class="text-sm italic text-gray-600 font-space">"Bonjour Monsieur Martin, je comprends votre frustration et je tiens a m'excuser..."</p>
+        <p class="text-sm italic text-gray-600 font-space">"Bonjour Monsieur Martin, je comprends votre frustration et je tiens à m'excuser..."</p>
       </div>
       <div class="anim neo-card p-5">
         <div class="neo-card-sm bg-gray-300 text-neo-black px-3 py-1 text-xs font-bold inline-block mb-3">DIRECT</div>
@@ -838,7 +838,7 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
       </div>
     </div>
     <div class="anim mt-6">
-      <p class="text-sm text-gray-500 font-space mb-3">Voilà a quoi ça ressemble dans l'app :</p>
+      <p class="text-sm text-gray-500 font-space mb-3">Voilà à quoi ça ressemble dans l'app :</p>
       <div class="neo-card p-2">
         <img src="Capture d'écran 2026-03-09 183937.png" alt="Avis Google avec 3 suggestions de réponse IA" class="w-full" style="display:block">
       </div>
@@ -855,7 +855,7 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
       <div class="section-number mb-4">21 / LES ALERTES</div>
       <h2 class="font-grotesk text-4xl sm:text-5xl font-bold mb-6">Les avis négatifs remontent vite.</h2>
       <p class="text-lg text-gray-500 font-space mb-8">
-        Des qu'un client met 3 étoiles ou moins avec un sentiment négatif, une alerte est créée. Le courtier voit ça sur sa page alertes avec la suggestion de réponse de l'IA.
+        Dès qu'un client met 3 étoiles ou moins avec un sentiment négatif, une alerte est créée. Le courtier voit ça sur sa page alertes avec la suggestion de réponse de l'IA.
       </p>
     </div>
     <div class="anim neo-card p-6 sm:p-8">
@@ -869,10 +869,10 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
       </div>
       <div class="flex flex-wrap gap-2 mb-4">
         <span class="bg-neo-gray px-3 py-1 text-xs font-space"><strong>Sentiment :</strong> négatif</span>
-        <span class="bg-neo-gray px-3 py-1 text-xs font-space"><strong>Theme :</strong> réactivité</span>
+        <span class="bg-neo-gray px-3 py-1 text-xs font-space"><strong>Thème :</strong> réactivité</span>
         <span class="bg-neo-gray px-3 py-1 text-xs font-space"><strong>Friction :</strong> pas de rappel</span>
       </div>
-      <p class="text-sm text-gray-500 font-space">Le courtier peut marquer l'alerte comme traitee, voir la suggestion IA, ou escalader.</p>
+      <p class="text-sm text-gray-500 font-space">Le courtier peut marquer l'alerte comme traitée, voir la suggestion IA, ou escalader.</p>
     </div>
   </div>
 </section>
@@ -886,13 +886,13 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
       <div class="section-number mb-4">23 / SYNC AVIS GOOGLE</div>
       <h2 class="font-grotesk text-4xl sm:text-5xl font-bold mb-6">Les avis Google se synchronisent tout seuls.</h2>
       <p class="text-lg text-gray-500 font-space mb-8">
-        Tous les jours a 6h, un cron va scraper les avis Google de chaque courtier. Quand un nouvel avis arrive, il est importe et l'IA génère 3 suggestions de réponse. Le courtier peut aussi lancer une sync manuelle quand il veut.
+        Tous les jours à 6h, un cron va scraper les avis Google de chaque courtier. Quand un nouvel avis arrive, il est importe et l'IA génère 3 suggestions de réponse. Le courtier peut aussi lancer une sync manuelle quand il veut.
       </p>
     </div>
     <div class="anim neo-card p-6">
       <div class="space-y-3 text-sm font-space">
-        <div class="flex items-start gap-3"><span class="font-bold">&#8226;</span> Nouveaux avis détectés et importes automatiquement</div>
-        <div class="flex items-start gap-3"><span class="font-bold">&#8226;</span> Avis modifies : les changements sont historisés</div>
+        <div class="flex items-start gap-3"><span class="font-bold">&#8226;</span> Nouveaux avis détectés et importés automatiquement</div>
+        <div class="flex items-start gap-3"><span class="font-bold">&#8226;</span> Avis modifiés : les changements sont historisés</div>
         <div class="flex items-start gap-3"><span class="font-bold">&#8226;</span> Dédoublonnage par auteur + date</div>
         <div class="flex items-start gap-3"><span class="font-bold">&#8226;</span> Chaque nouvel avis passe par Claude Sonnet pour les réponses</div>
       </div>
@@ -909,7 +909,7 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
       <div class="section-number mb-4">24 / VEILLE CONCURRENTIELLE</div>
       <h2 class="font-grotesk text-4xl sm:text-5xl font-bold mb-6">Surveiller les concurrents.</h2>
       <p class="text-lg text-gray-500 font-space mb-8">
-        Le système détecte automatiquement les courtiers concurrents par zone géographique. Chaque lundi a 7h, un cron scrape leurs avis pour suivre leur note et leur volume d'avis.
+        Le système détecte automatiquement les courtiers concurrents par zone géographique. Chaque lundi à 7h, un cron scrape leurs avis pour suivre leur note et leur volume d'avis.
       </p>
     </div>
     <div class="anim neo-card p-6 sm:p-8">
@@ -944,15 +944,15 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
       <div class="section-number mb-4">25 / ANALYTIQUES</div>
       <h2 class="font-grotesk text-4xl sm:text-5xl font-bold mb-6">Des stats détaillées.</h2>
       <p class="text-lg text-gray-500 font-space mb-8">
-        Le courtier a une page d'analytiques avancées avec des filtres par période (30j, 90j, 1 an). Compteurs animes, graphiques, funnel de conversion, et comparaison avec les concurrents.
+        Le courtier a une page d'analytiques avancées avec des filtres par période (30j, 90j, 1 an). Compteurs animés, graphiques, funnel de conversion, et comparaison avec les concurrents.
       </p>
     </div>
     <div class="anim neo-card p-6">
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 text-sm font-space">
-        <div class="bg-neo-gray p-3 text-center"><strong>Compteurs animes</strong><br><span class="text-xs text-gray-400">note, avis, conversion</span></div>
+        <div class="bg-neo-gray p-3 text-center"><strong>Compteurs animés</strong><br><span class="text-xs text-gray-400">note, avis, conversion</span></div>
         <div class="bg-neo-gray p-3 text-center"><strong>Courbe évolution</strong><br><span class="text-xs text-gray-400">jour/semaine/mois</span></div>
         <div class="bg-neo-gray p-3 text-center"><strong>Camembert sentiment</strong><br><span class="text-xs text-gray-400">positif/neutre/négatif</span></div>
-        <div class="bg-neo-gray p-3 text-center"><strong>Funnel conversion</strong><br><span class="text-xs text-gray-400">envoyés &rarr; cliques &rarr; completes</span></div>
+        <div class="bg-neo-gray p-3 text-center"><strong>Funnel conversion</strong><br><span class="text-xs text-gray-400">envoyés &rarr; cliqués &rarr; complétés</span></div>
         <div class="bg-neo-gray p-3 text-center"><strong>Tableau concurrents</strong><br><span class="text-xs text-gray-400">note, nb avis, évolution</span></div>
         <div class="bg-neo-gray p-3 text-center"><strong>Export Excel</strong><br><span class="text-xs text-gray-400">conformité ACPR</span></div>
       </div>
@@ -969,7 +969,7 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
       <div class="section-number text-gray-400 mb-4">26 / SÉCURITÉ</div>
       <h2 class="font-grotesk text-4xl sm:text-5xl font-bold mb-6">Les données sont protégées.</h2>
       <p class="text-lg text-gray-400 font-space mb-8">
-        Pas un detail secondaire. Voici ce qui est en place :
+        Pas un détail secondaire. Voici ce qui est en place :
       </p>
     </div>
     <div class="grid sm:grid-cols-2 gap-5">
@@ -979,11 +979,11 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
       </div>
       <div class="anim neo-card p-5" style="background:rgba(255,255,255,.05);border-color:#333;box-shadow:4px 4px 0 rgba(255,255,255,.1)">
         <h3 class="font-bold font-grotesk mb-2">Row-Level Security</h3>
-        <p class="text-sm text-gray-400 font-space">Chaque courtier ne voit que ses propres données. Meme si quelqu'un essaie, la base bloque.</p>
+        <p class="text-sm text-gray-400 font-space">Chaque courtier ne voit que ses propres données. Même si quelqu'un essaie, la base bloque.</p>
       </div>
       <div class="anim neo-card p-5" style="background:rgba(255,255,255,.05);border-color:#333;box-shadow:4px 4px 0 rgba(255,255,255,.1)">
         <h3 class="font-bold font-grotesk mb-2">Middleware d'auth</h3>
-        <p class="text-sm text-gray-400 font-space">Chaque requete est vérifiée. Si pas connecte, redirigé vers /login. Les pages publiques (tampon, webhooks) sont exclues.</p>
+        <p class="text-sm text-gray-400 font-space">Chaque requête est vérifiée. Si pas connecté, redirigé vers /login. Les pages publiques (tampon, webhooks) sont exclues.</p>
       </div>
       <div class="anim neo-card p-5" style="background:rgba(255,255,255,.05);border-color:#333;box-shadow:4px 4px 0 rgba(255,255,255,.1)">
         <h3 class="font-bold font-grotesk mb-2">CSP + HSTS</h3>
@@ -999,29 +999,29 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
 <section class="py-20 px-4" style="border-top:3px solid #0a0a0a">
   <div class="max-w-4xl mx-auto">
     <div class="anim">
-      <div class="section-number mb-4">27 / LES TACHES AUTOMATIQUES</div>
+      <div class="section-number mb-4">27 / LES TÂCHES AUTOMATIQUES</div>
       <h2 class="font-grotesk text-4xl sm:text-5xl font-bold mb-6">4 cron jobs qui tournent tout seuls.</h2>
     </div>
     <div class="grid sm:grid-cols-2 gap-5">
       <div class="anim neo-card p-5">
-        <div class="font-mono text-xs text-gray-400 mb-2">Tous les jours a 9h</div>
+        <div class="font-mono text-xs text-gray-400 mb-2">Tous les jours à 9h</div>
         <h3 class="font-grotesk font-bold mb-1">Relances</h3>
-        <p class="text-sm text-gray-500 font-space">Verifie les sollicitations non complétées et envoie J+2 ou J+5.</p>
+        <p class="text-sm text-gray-500 font-space">Vérifie les sollicitations non complétées et envoie J+2 ou J+5.</p>
       </div>
       <div class="anim neo-card p-5">
-        <div class="font-mono text-xs text-gray-400 mb-2">Tous les jours a 6h</div>
+        <div class="font-mono text-xs text-gray-400 mb-2">Tous les jours à 6h</div>
         <h3 class="font-grotesk font-bold mb-1">Sync Google</h3>
         <p class="text-sm text-gray-500 font-space">Scrape les avis Google de chaque courtier via Apify.</p>
       </div>
       <div class="anim neo-card p-5">
-        <div class="font-mono text-xs text-gray-400 mb-2">Chaque lundi a 7h</div>
+        <div class="font-mono text-xs text-gray-400 mb-2">Chaque lundi à 7h</div>
         <h3 class="font-grotesk font-bold mb-1">Veille concurrents</h3>
         <p class="text-sm text-gray-500 font-space">Scrape les notes des concurrents et détecte les changements.</p>
       </div>
       <div class="anim neo-card p-5">
-        <div class="font-mono text-xs text-gray-400 mb-2">Tous les jours a 3h</div>
+        <div class="font-mono text-xs text-gray-400 mb-2">Tous les jours à 3h</div>
         <h3 class="font-grotesk font-bold mb-1">Refresh tokens</h3>
-        <p class="text-sm text-gray-500 font-space">Rafraichit les tokens OAuth expirés (Gmail/Microsoft).</p>
+        <p class="text-sm text-gray-500 font-space">Rafraîchit les tokens OAuth expirés (Gmail/Microsoft).</p>
       </div>
     </div>
   </div>
@@ -1044,12 +1044,12 @@ body{font-family:'Inter',sans-serif;background:#fefefe;color:#0a0a0a;overflow-x:
 <pre>POST /api/webhook/brio
 Headers: { "x-webhook-secret": "cle-du-courtier" }
 Body: {
-  "client_prenom": "Pierre",
+  "client_prénom": "Pierre",
   "client_nom": "Dupont",
   "client_email": "pierre@email.com"
 }</pre>
       </div>
-      <p class="text-sm text-gray-500 font-space">Le secret est vérifié, le courtier est identifie, la sollicitation est créée et dédoublonnée par email, et l'email part.</p>
+      <p class="text-sm text-gray-500 font-space">Le secret est vérifié, le courtier est identifié, la sollicitation est créée et dédoublonnée par email, et l'email part.</p>
     </div>
   </div>
 </section>
@@ -1063,7 +1063,7 @@ Body: {
       <div class="section-number mb-4">29 / L'INTERFACE</div>
       <h2 class="font-grotesk text-4xl sm:text-5xl font-bold mb-6">Un design propre et pro.</h2>
       <p class="text-lg text-gray-500 font-space mb-8">
-        L'interface a une sidebar de navigation, un design sobre (bleu fonce, fond clair), et des composants réutilisables : boutons, cartes, badges, inputs, modals, widgets de notation, toasts...
+        L'interface a une sidebar de navigation, un design sobre (bleu foncé, fond clair), et des composants réutilisables : boutons, cartes, badges, inputs, modals, widgets de notation, toasts...
       </p>
     </div>
     <div class="anim">
@@ -1086,7 +1086,7 @@ Body: {
             <div class="text-xs font-mono mt-1 text-gray-400">Cartes</div>
           </div>
         </div>
-        <p class="text-sm text-gray-500 font-space">Icones Lucide React. Police Inter. Responsive mobile.</p>
+        <p class="text-sm text-gray-500 font-space">Icônes Lucide React. Police Inter. Responsive mobile.</p>
       </div>
     </div>
   </div>
@@ -1126,18 +1126,18 @@ Body: {
       <div class="section-number text-gray-400 mb-4">31 / LA PARTIE LA PLUS COMPLEXE</div>
       <h2 class="font-grotesk text-4xl sm:text-5xl font-bold mb-6">Les emails depuis la boite du courtier.</h2>
       <p class="text-lg text-gray-400 font-space leading-relaxed mb-8">
-        C'est la partie qui m'a pris le plus de temps. L'idee c'est simple : quand le courtier envoie une campagne, les emails partent de <strong class="text-white">sa propre adresse email</strong> (son Outlook ou son Gmail), pas d'un "noreply@hibroker.com". Le client reçoit un mail de "jean@cabinet-dupont.be" et il reconnait l'expediteur. Zero spam.
+        C'est la partie qui m'a pris le plus de temps. L'idée c'est simple : quand le courtier envoie une campagne, les emails partent de <strong class="text-white">sa propre adresse email</strong> (son Outlook ou son Gmail), pas d'un "noreply@hibroker.com". Le client reçoit un mail de "jean@cabinet-dupont.be" et il reconnaît l'expéditeur. Zero spam.
       </p>
     </div>
     <div class="anim">
       <div class="neo-card p-6 sm:p-8" style="background:rgba(255,255,255,.05);border-color:#333;box-shadow:4px 4px 0 rgba(255,255,255,.1)">
         <h4 class="font-grotesk font-bold mb-4">Comment ça marche :</h4>
         <div class="space-y-3 text-sm font-space text-gray-300">
-          <div class="flex items-start gap-3"><span class="text-white font-bold">1.</span> Le courtier connecte sa boite mail pendant l'onboarding (un clic, OAuth)</div>
+          <div class="flex items-start gap-3"><span class="text-white font-bold">1.</span> Le courtier connecté sa boite mail pendant l'onboarding (un clic, OAuth)</div>
           <div class="flex items-start gap-3"><span class="text-white font-bold">2.</span> On récupère un access_token + refresh_token</div>
           <div class="flex items-start gap-3"><span class="text-white font-bold">3.</span> Les tokens sont <strong class="text-white">chiffrés en AES-256-GCM</strong> avant d'aller en base</div>
-          <div class="flex items-start gap-3"><span class="text-white font-bold">4.</span> A chaque envoi : déchiffrement &rarr; appel API Microsoft Graph ou Gmail &rarr; email envoye</div>
-          <div class="flex items-start gap-3"><span class="text-white font-bold">5.</span> L'email apparait dans les "envoyés" du courtier</div>
+          <div class="flex items-start gap-3"><span class="text-white font-bold">4.</span> À chaque envoi : déchiffrement &rarr; appel API Microsoft Graph ou Gmail &rarr; email envoyé</div>
+          <div class="flex items-start gap-3"><span class="text-white font-bold">5.</span> L'email apparaît dans les "envoyés" du courtier</div>
         </div>
       </div>
     </div>
@@ -1151,12 +1151,12 @@ Body: {
   <div class="max-w-4xl mx-auto">
     <div class="anim">
       <div class="section-number mb-4">32 / MICROSOFT 365 + GMAIL</div>
-      <h2 class="font-grotesk text-4xl sm:text-5xl font-bold mb-6">Deux providers supportes.</h2>
+      <h2 class="font-grotesk text-4xl sm:text-5xl font-bold mb-6">Deux providers supportés.</h2>
     </div>
     <div class="grid sm:grid-cols-2 gap-6">
       <div class="anim neo-card p-6">
         <h3 class="font-grotesk font-bold text-lg mb-3">Microsoft 365</h3>
-        <p class="text-sm text-gray-600 font-space mb-3">Via <strong>Graph API</strong>. La majorite des courtiers en Belgique sont sur Outlook/Microsoft. C'est le provider prioritaire.</p>
+        <p class="text-sm text-gray-600 font-space mb-3">Via <strong>Graph API</strong>. La majorité des courtiers en Belgique sont sur Outlook/Microsoft. C'est le provider prioritaire.</p>
         <div class="space-y-1 text-xs font-mono text-gray-400">
           <div class="bg-neo-gray p-2">GET /api/auth/microsoft</div>
           <div class="bg-neo-gray p-2">GET /api/auth/microsoft/callback</div>
@@ -1165,7 +1165,7 @@ Body: {
       </div>
       <div class="anim neo-card p-6">
         <h3 class="font-grotesk font-bold text-lg mb-3">Gmail</h3>
-        <p class="text-sm text-gray-600 font-space mb-3">Via <strong>Gmail API</strong>. Meme principe. C'est le fallback si le courtier n'a pas Microsoft. Le refresh de tokens est mieux gere dans le code actuel.</p>
+        <p class="text-sm text-gray-600 font-space mb-3">Via <strong>Gmail API</strong>. Même principe. C'est le fallback si le courtier n'a pas Microsoft. Le refresh de tokens est mieux gère dans le code actuel.</p>
         <div class="space-y-1 text-xs font-mono text-gray-400">
           <div class="bg-neo-gray p-2">GET /api/auth/gmail</div>
           <div class="bg-neo-gray p-2">GET /api/auth/gmail/callback</div>
@@ -1183,9 +1183,9 @@ Body: {
   <div class="max-w-4xl mx-auto">
     <div class="anim">
       <div class="section-number mb-4">33 / OU J'EN SUIS SUR LES EMAILS</div>
-      <h2 class="font-grotesk text-4xl sm:text-5xl font-bold mb-6">J'ai reussi en partie.</h2>
+      <h2 class="font-grotesk text-4xl sm:text-5xl font-bold mb-6">J'ai réussi en partie.</h2>
       <p class="text-lg text-gray-500 font-space leading-relaxed mb-8">
-        C'est clairement la partie qui m'a pris le plus de temps sur tout le projet. La connexion OAuth, le chiffrement des tokens, le refresh automatique, les appels aux APIs Microsoft et Google... C'est technique et il y a beaucoup de cas a gerer.
+        C'est clairement la partie qui m'a pris le plus de temps sur tout le projet. La connexion OAuth, le chiffrement des tokens, le refresh automatique, les appels aux APIs Microsoft et Google... C'est technique et il y a beaucoup de cas a gérer.
       </p>
     </div>
     <div class="anim neo-card p-6 sm:p-8">
@@ -1200,12 +1200,12 @@ Body: {
       </div>
       <h4 class="font-grotesk font-bold mb-4">Ce qui reste pour la v2 :</h4>
       <div class="space-y-2 text-sm font-space">
-        <div class="flex items-start gap-2"><span class="check-todo">&#9744;</span> Programmer la partie campagne pour que le courtier connecte son Gmail ou Outlook et que les mails partent automatiquement depuis sa boite</div>
+        <div class="flex items-start gap-2"><span class="check-todo">&#9744;</span> Programmer la partie campagne pour que le courtier connecté son Gmail ou Outlook et que les mails partent automatiquement depuis sa boite</div>
         <div class="flex items-start gap-2"><span class="check-todo">&#9744;</span> Gestion robuste du refresh token Microsoft (qui expire plus vite que Gmail)</div>
-        <div class="flex items-start gap-2"><span class="check-todo">&#9744;</span> Interface dans les parametres pour gerer la connexion email</div>
+        <div class="flex items-start gap-2"><span class="check-todo">&#9744;</span> Interface dans les paramètres pour gérer la connexion email</div>
       </div>
       <div class="mt-6 p-4 bg-white border-l-4 border-neo-black text-sm font-space">
-        <strong>Ca devrait marcher sur la v2.</strong> Les briques sont la, il faut finir de tout brancher ensemble dans l'interface de campagne.
+        <strong>Ça devrait marcher sur la v2.</strong> Les briques sont là, il faut finir de tout brancher ensemble dans l'interface de campagne.
       </div>
     </div>
   </div>
@@ -1228,7 +1228,7 @@ Body: {
         <div class="flex items-start gap-2"><span class="check-done">&#9745;</span> <strong>Création de campagnes</strong> &mdash; manuelle, CSV, ou webhook CRM</div>
         <div class="flex items-start gap-2"><span class="check-done">&#9745;</span> <strong>Page tampon</strong> &mdash; page d'avis publique avec token unique</div>
         <div class="flex items-start gap-2"><span class="check-done">&#9745;</span> <strong>Routage intelligent</strong> &mdash; note &ge; 4 &rarr; Google, note &lt; 4 &rarr; interne</div>
-        <div class="flex items-start gap-2"><span class="check-done">&#9745;</span> <strong>Analyse IA automatique</strong> &mdash; sentiment, theme, frictions, suggestion</div>
+        <div class="flex items-start gap-2"><span class="check-done">&#9745;</span> <strong>Analyse IA automatique</strong> &mdash; sentiment, thème, frictions, suggestion</div>
         <div class="flex items-start gap-2"><span class="check-done">&#9745;</span> <strong>3 suggestions de réponse Google</strong> &mdash; professionnel, empathique, direct</div>
         <div class="flex items-start gap-2"><span class="check-done">&#9745;</span> <strong>IA personnalisée</strong> &mdash; ton, spécialité, document ACPR</div>
         <div class="flex items-start gap-2"><span class="check-done">&#9745;</span> <strong>Alertes avis négatifs</strong> &mdash; création auto + suggestion IA</div>
@@ -1251,7 +1251,7 @@ Body: {
         <div class="flex items-start gap-2"><span class="check-done">&#9745;</span> <strong>Registre réclamations ACPR/FSMA</strong> &mdash; pré-rempli par l'IA, export Excel</div>
         <div class="flex items-start gap-2"><span class="check-done">&#9745;</span> <strong>Sync avis Google</strong> &mdash; scraping Apify + import auto + cron quotidien</div>
         <div class="flex items-start gap-2"><span class="check-done">&#9745;</span> <strong>Veille concurrentielle</strong> &mdash; détection auto + cron hebdomadaire</div>
-        <div class="flex items-start gap-2"><span class="check-done">&#9745;</span> <strong>Relances automatiques</strong> &mdash; J+2, J+5, arret auto</div>
+        <div class="flex items-start gap-2"><span class="check-done">&#9745;</span> <strong>Relances automatiques</strong> &mdash; J+2, J+5, arrêt auto</div>
         <div class="flex items-start gap-2"><span class="check-done">&#9745;</span> <strong>Analytiques avancées</strong> &mdash; filtres, graphiques, funnel, concurrents</div>
         <div class="flex items-start gap-2"><span class="check-done">&#9745;</span> <strong>Export Excel</strong> &mdash; conformité ACPR, via SheetJS</div>
         <div class="flex items-start gap-2"><span class="check-done">&#9745;</span> <strong>Sécurité</strong> &mdash; AES-256, RLS, middleware auth, CSP, HSTS</div>
@@ -1266,44 +1266,44 @@ Body: {
 </section>
 
 <!-- ============================================ -->
-<!-- SECTION 36 — CE QUI RESTE A FAIRE -->
+<!-- SECTION 36 — CE QUI RESTE À FAIRE -->
 <!-- ============================================ -->
 <section class="py-20 px-4" style="border-top:3px solid #0a0a0a">
   <div class="max-w-4xl mx-auto">
     <div class="anim">
-      <div class="section-number mb-4">36 / CE QUI RESTE A FAIRE</div>
+      <div class="section-number mb-4">36 / CE QUI RESTE À FAIRE</div>
       <h2 class="font-grotesk text-4xl sm:text-5xl font-bold mb-6">Pour la v2.</h2>
       <p class="text-lg text-gray-500 font-space mb-8">
         Le gros morceau c'est la connexion email dans les campagnes. Le reste ce sont des améliorations.
       </p>
     </div>
     <div class="anim neo-card p-6 sm:p-8">
-      <div class="neo-card-sm bg-neo-black text-white px-3 py-1 text-xs font-bold inline-block mb-4">PRIORITE HAUTE</div>
+      <div class="neo-card-sm bg-neo-black text-white px-3 py-1 text-xs font-bold inline-block mb-4">PRIORITÉ HAUTE</div>
       <div class="space-y-3 text-sm font-space">
-        <div class="flex items-start gap-2"><span class="check-todo">&#9744;</span> <strong>Campagnes email via Gmail/Outlook</strong> &mdash; connecter le compte du courtier pour que les mails partent de son adresse. Les briques sont la, il faut finir de brancher dans l'interface.</div>
+        <div class="flex items-start gap-2"><span class="check-todo">&#9744;</span> <strong>Campagnes email via Gmail/Outlook</strong> &mdash; connecter le compte du courtier pour que les mails partent de son adresse. Les briques sont là, il faut finir de brancher dans l'interface.</div>
         <div class="flex items-start gap-2"><span class="check-todo">&#9744;</span> <strong>Refresh token Microsoft</strong> &mdash; le rendre plus robuste (les tokens Microsoft expirent plus vite)</div>
-        <div class="flex items-start gap-2"><span class="check-todo">&#9744;</span> <strong>Interface connexion email</strong> &mdash; page dans les parametres pour gerer la connexion Gmail/Outlook</div>
+        <div class="flex items-start gap-2"><span class="check-todo">&#9744;</span> <strong>Interface connexion email</strong> &mdash; page dans les paramètres pour gérer la connexion Gmail/Outlook</div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ============================================ -->
-<!-- SECTION 37 — AMELIORATIONS TECHNIQUES -->
+<!-- SECTION 37 — AMÉLIORATIONS TECHNIQUES -->
 <!-- ============================================ -->
 <section class="py-20 px-4 bg-neo-gray" style="border-top:3px solid #0a0a0a">
   <div class="max-w-4xl mx-auto">
     <div class="anim">
-      <div class="section-number mb-4">37 / AMELIORATIONS TECHNIQUES</div>
+      <div class="section-number mb-4">37 / AMÉLIORATIONS TECHNIQUES</div>
       <h2 class="font-grotesk text-4xl sm:text-5xl font-bold mb-6">Pour solidifier.</h2>
     </div>
     <div class="anim neo-card p-6 sm:p-8">
-      <div class="neo-card-sm bg-gray-500 text-white px-3 py-1 text-xs font-bold inline-block mb-4">PRIORITE MOYENNE</div>
+      <div class="neo-card-sm bg-gray-500 text-white px-3 py-1 text-xs font-bold inline-block mb-4">PRIORITÉ MOYENNE</div>
       <div class="space-y-3 text-sm font-space">
-        <div class="flex items-start gap-2"><span class="check-todo">&#9744;</span> <strong>Tests automatises</strong> &mdash; pour le moment pas de tests dans le code. A ajouter (Jest + Playwright)</div>
+        <div class="flex items-start gap-2"><span class="check-todo">&#9744;</span> <strong>Tests automatisés</strong> &mdash; pour le moment pas de tests dans le code. À ajouter (Jest + Playwright)</div>
         <div class="flex items-start gap-2"><span class="check-todo">&#9744;</span> <strong>Monitoring (Sentry)</strong> &mdash; pour voir les erreurs en production</div>
-        <div class="flex items-start gap-2"><span class="check-todo">&#9744;</span> <strong>Rate limiting Redis</strong> &mdash; le limiteur actuel est en memoire, ça marche mal sur Vercel serverless</div>
-        <div class="flex items-start gap-2"><span class="check-todo">&#9744;</span> <strong>Validation Zod</strong> &mdash; pour valider les inputs de maniere plus solide</div>
+        <div class="flex items-start gap-2"><span class="check-todo">&#9744;</span> <strong>Rate limiting Redis</strong> &mdash; le limiteur actuel est en mémoire, ça marche mal sur Vercel serverless</div>
+        <div class="flex items-start gap-2"><span class="check-todo">&#9744;</span> <strong>Validation Zod</strong> &mdash; pour valider les inputs de manière plus solide</div>
         <div class="flex items-start gap-2"><span class="check-todo">&#9744;</span> <strong>Notifications temps reel</strong> &mdash; alertes push via Supabase Realtime</div>
         <div class="flex items-start gap-2"><span class="check-todo">&#9744;</span> <strong>Pixel tracking email</strong> &mdash; détecter si le client a ouvert l'email</div>
       </div>
@@ -1318,7 +1318,7 @@ Body: {
   <div class="max-w-4xl mx-auto">
     <div class="anim">
       <div class="section-number mb-4">38 / POUR PLUS TARD</div>
-      <h2 class="font-grotesk text-4xl sm:text-5xl font-bold mb-6">Idees pour la suite.</h2>
+      <h2 class="font-grotesk text-4xl sm:text-5xl font-bold mb-6">Idées pour la suite.</h2>
     </div>
     <div class="anim neo-card p-6 sm:p-8">
       <div class="neo-card-sm bg-gray-300 text-neo-black px-3 py-1 text-xs font-bold inline-block mb-4">QUAND ON AURA LE TEMPS</div>
@@ -1330,7 +1330,6 @@ Body: {
         <div class="flex items-start gap-2"><span class="check-todo">&#9744;</span> Templates email personnalisables par le courtier</div>
         <div class="flex items-start gap-2"><span class="check-todo">&#9744;</span> A/B testing sur les emails</div>
         <div class="flex items-start gap-2"><span class="check-todo">&#9744;</span> Documentation API (Swagger) pour les intégrateurs CRM</div>
-        <div class="flex items-start gap-2"><span class="check-todo">&#9744;</span> RAG avance avec embeddings (pgvector)</div>
       </div>
     </div>
   </div>
@@ -1353,7 +1352,7 @@ Body: {
         </div>
         <div class="flex items-start gap-3 p-3 border-l-4 border-neo-black bg-white">
           <span class="font-bold">&#10003;</span>
-          <span class="text-sm font-space">Donnees réelles (pas de mock) &mdash; fait</span>
+          <span class="text-sm font-space">Données réelles (pas de mock) &mdash; fait</span>
         </div>
         <div class="flex items-start gap-3 p-3 border-l-4 border-neo-black bg-white">
           <span class="font-bold">&#10003;</span>
@@ -1377,7 +1376,7 @@ Body: {
         </div>
         <div class="flex items-start gap-3 p-3 border-l-4 border-gray-300 bg-white">
           <span class="text-gray-400">&#9744;</span>
-          <span class="text-sm font-space">Domaine personnalise + monitoring</span>
+          <span class="text-sm font-space">Domaine personnalisé + monitoring</span>
         </div>
       </div>
     </div>
@@ -1391,12 +1390,12 @@ Body: {
   <div class="max-w-3xl mx-auto text-center">
     <div class="anim">
       <div class="section-number text-gray-400 mb-4">40 / VOILA</div>
-      <h2 class="font-grotesk text-4xl sm:text-5xl font-bold mb-6">C'est l'etat des lieux.</h2>
+      <h2 class="font-grotesk text-4xl sm:text-5xl font-bold mb-6">C'est l'état des lieux.</h2>
       <p class="text-lg opacity-80 font-space mb-4 leading-relaxed">
         La v1 est la, elle tourne. L'onboarding marche, le dashboard marche, l'IA marche, le scraping Google marche, les relances marchent, la sécurité est en place.
       </p>
       <p class="text-lg opacity-80 font-space mb-8 leading-relaxed">
-        Le gros truc qui reste c'est de finir de brancher les emails pour que les campagnes partent directement depuis la boite du courtier. C'est la partie la plus technique et j'ai bien avance dessus. Ca devrait etre prêt pour la v2.
+        Le gros truc qui reste c'est de finir de brancher les emails pour que les campagnes partent directement depuis la boite du courtier. C'est la partie la plus technique et j'ai bien avancé dessus. Ça devrait être prêt pour la v2.
       </p>
       <p class="text-lg opacity-80 font-space mb-8 leading-relaxed">
         Si tu as des questions sur une partie en particulier, on en parle.
